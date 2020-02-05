@@ -23,9 +23,9 @@ def directors_totals(nds)
   
   
   nds.each_with_object({}) do |director, sum_total_by_director|
-  name = director[:name]
-  sum_total = director[:movies].sum {|movie| movie[:worldwide_gross]}
-  sum_total_by_director[name] = sum_total
+    name = director[:name]
+    sum_total = director[:movies].sum {|movie| movie[:worldwide_gross]}
+    sum_total_by_director[name] = sum_total
   
   end 
   
