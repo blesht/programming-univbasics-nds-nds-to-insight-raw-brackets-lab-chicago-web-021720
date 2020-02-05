@@ -16,7 +16,7 @@ def directors_totals(nds)
       
     end 
     director_name = nds[dir_index][:name]
-    sum_total_by_director[director_name] ||= total_for_director
+    sum_total_by_director[director_name] = total_for_director
     dir_index += 1 
   end 
   sum_total_by_director
